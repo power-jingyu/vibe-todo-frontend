@@ -5,12 +5,19 @@
   padding: 0;
 }
 
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
   min-height: 100vh;
   color: #e8e8e8;
   position: relative;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body::before {
@@ -18,8 +25,8 @@ body::before {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background: 
     radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
     radial-gradient(circle at 80% 20%, rgba(255, 119, 48, 0.15) 0%, transparent 50%),
@@ -33,6 +40,8 @@ body::before {
   margin: 0 auto;
   padding: 20px;
   min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* 헤더 스타일 */
