@@ -643,4 +643,18 @@ body::before {
   .form-actions {
     flex-direction: column;
   }
+  
+  .quick-add-form {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .quick-input {
+    width: 100%;
+  }
+  
+  .btn-quick-add {
+    width: 100%;
+    min-width: auto;
+  }
 }
